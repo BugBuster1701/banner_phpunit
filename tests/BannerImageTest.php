@@ -153,7 +153,7 @@ class BannerImageTest extends \PHPUnit_Framework_TestCase
                 //new heigh only
                 array( array('400','600',false) ,'200','300',  ''   ,'600'),
 			    //no new parameters
-    			array( array('200','300',false) ,'200','300',  ''   ,'')
+    			array( array('200','300',true) ,'200','300',  ''   ,'')
     			);
     }
   

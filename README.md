@@ -1,6 +1,7 @@
-Contao Banner Advertisement Module 
-PHPUnit-Tests for Contao 3 Version
-==================================
+Contao Banner Advertisement Module
+================================== 
+## PHPUnit-Tests for Contao 3 Version
+Extra module for PHPUnit-Tests, only for the Banner Module 3.x.
 
 ## Branches
 
