@@ -145,7 +145,7 @@ class BannerImageTest extends \PHPUnit_Framework_TestCase
     }
     public function providerbannerimagenew()
     {
-        return array (
+        return array(
                 //new width and new height
                 array( array('100','200',false) ,'200','300',  '100','200'),
                 //new width only
@@ -156,6 +156,25 @@ class BannerImageTest extends \PHPUnit_Framework_TestCase
     			array( array('200','300',true) ,'200','300',  ''   ,'')
     			);
     }
-  
+  	
+    /**
+     * Test for getCheckBannerImageFallback()
+     *
+     * @dataProvider providerbannerimagefallback
+     */
+    public function testGetCheckBannerImageFallback($result,$BannerImage, $intWidth, $intHeight)
+    {
+    	//Result must be equal
+    	$this->assertEquals($result,$this->object->getCheckBannerImageFallback($BannerImage, $intWidth, $intHeight));
+    }
+    public function providerbannerimagefallback()
+    {
+    	return array(
+    			// no fallback image found
+    			array(false, 'system/modules/banner_phpunit/tests/flash/bugbuster-phpunit.swc.swf', 160, 40),
+    			// fallback image found
+    			array('system/modules/banner_phpunit/tests/flash/bugbuster-phpunit.swf.jpg', 'system/modules/banner_phpunit/tests/flash/bugbuster-phpunit.swf.swf', 234, 60)
+    			);
+    }
 }
 ?>
