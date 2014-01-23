@@ -1,21 +1,18 @@
-<?php
+<?php 
+
 /**
- * Contao Open Source CMS
- * Copyright (C) 2005-2012 Leo Feyer
+ * Contao Open Source CMS, Copyright (C) 2005-2014 Leo Feyer
  *
- * @link http://www.contao.org
- * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
- *
- * Modul Banner - PHPUnit Class BannerReferrerTest
- *
- * PHP version 5
- * @copyright  Glen Langer 2007..2012
- * @author     Glen Langer
+ * Modul Banner - PHPUnit Class BannerImageTest
+ * 
+ * @copyright  Glen Langer 2007..2014 <http://www.contao.glen-langer.de>
+ * @author     Glen Langer (BugBuster)
  * @package    PHPUnitBanner
  * @license    LGPL
- * @example    phpunit BannerReferrerTest
+ * @filesource
+ * @see        https://github.com/BugBuster1701/banner
  *
- *             PHPUnit 3.4.13 by Sebastian Bergmann.
+ *             PHPUnit 3.6.10 by Sebastian Bergmann.
  *             ............
  *             Time: 0 seconds, Memory: 5.00Mb
  *             OK (12 tests, 12 assertions)
@@ -32,7 +29,7 @@ require(dirname(dirname(dirname(dirname(__FILE__)))).'/initialize.php');
 /**
  * PHPUnit Framework
  */
-require_once 'PHPUnit/Framework.php';
+//require_once 'PHPUnit/Framework.php'; // nur bei PHPUNIT 3.4
 
 /**
  * Class for testing
